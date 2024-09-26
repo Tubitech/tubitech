@@ -1,0 +1,263 @@
+:root {
+  --red: rgb(147, 76, 76);
+}
+
+#body {
+  background-color: #630101 ;
+}
+
+/*! -------------- 1- NAVBAR ---------------- */
+.navbar {
+  font-family: "Baskerville Display PT" ;
+  font-size: 1rem;
+  text-transform: capitalize;
+  font-weight: 400;
+  background-color: #3a0000;
+}
+.nav-link {
+  color: white;
+  transition: color 0.5s;
+}
+.nav-link:hover {
+  color: var(#5fd429);
+}
+
+/*! ------------- 2- CAROUSEL --------------- */
+.carousel-item {
+  max-height: calc(100vh - 88px);
+
+}
+
+.carousel-item h5 {
+ 
+  font-size: 4rem;
+  font-family: "Baskerville Display PT";
+  margin-top: 100px;
+  
+  /* text-shadow: 3px 3px 3px black; */
+}
+
+.carousel-item p {
+  /* text-shadow: 3px 3px 3px black; */
+  font-weight: 600;
+  font-family: "Baskerville Display PT"; 
+  font-size: 2rem; 
+}
+
+.carousel-item .btn {
+  width: 7rem;
+  margin-bottom: 1rem;
+}
+.carousel-indicators button {
+  background-color: var(--red) !important;
+  height: 0.4rem !important;
+  width: 6rem !important;
+  margin-right: 0.5rem !important;
+}
+.carousel-caption {
+  bottom: 18rem;
+}
+
+/*! ------------ 3- ABOUT SECTION ----------- */
+
+#about {
+  background-color: #3a0000;
+  height: 300px; /* Yükseklik ayarlama */
+  padding-top: 40px;
+  padding-bottom: 20px;
+} 
+
+/*! ------------- 4- INSTRUCTORS -------------*/
+section#instructors .card {
+  transition: transform 0.5s;
+}
+
+section#instructors .card:hover {
+  transform: scale(1.05);
+}
+
+section#instructors .socials i {
+  transition: opacity 0.5s;
+}
+
+section#instructors .socials i:hover {
+  opacity: 0.5;
+}
+
+/*! ----------- 4- STUDENTS SECTION ----------*/
+
+.card-carousel {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 86.5%;
+  margin: auto;
+  
+}
+
+
+.cards-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  gap: 10px;
+  padding: 20px 0;
+}
+
+.cards-container::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  min-width: 250px;
+  max-width: 250px;
+  margin: 0 10px;
+  border-radius: 8px;
+  background-color: #e9e9e9;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  scroll-snap-align: start;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card h3 {
+  margin-top: 0;
+  font-size: 1.25rem;
+}
+
+.card p {
+  color: #555555;
+  font-size: 1rem;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.arrow {
+  font-size: 2rem;
+  color: #333;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  user-select: none;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.arrow-left {
+  left: -25px;
+}
+
+.arrow-right {
+  right: -25px;
+}
+
+.arrow:hover {
+  background-color: #333;
+  color: #ffffff;
+}
+
+
+section#students img {
+  max-width: 5px;
+  min-width: 700px;
+}
+
+/*! ----------- 5- ANIMATION SECTION ----------- */
+section#students img {
+  max-width: 5px;
+  min-width: 700px;
+} 
+/*! ----------- 5- COURSES SECTION ----------- */
+section#courses .nav-link.active {
+  background-color: var(--red);
+}
+section#courses .nav-link {
+  color: #63010194; 
+}
+
+/*! ----------- 6- CONTACT SECTION ------------ */
+footer{
+  background-color: #630101;
+}
+
+/*! --------------- 7- FOOTER ----------------- */
+footer i {
+  font-size: 2rem;
+  color: #e9e9e9;
+  margin-right: 0.8rem;
+  transition: color 1s;
+}
+
+footer i:hover {
+  color: var(--red);
+}
+
+/** -------------- UP-BUTTON ------------------ */
+.btn-up {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  color: #e9e9e9;
+  background-color: var(--red);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  text-decoration: none;
+}
+
+.btn-up:hover {
+  color: #630101;
+  background-color: #e9e9e9;
+}
+
+.btn-up:hover i {
+  transform: scale(1.2);
+  font-size: 1.4rem;
+}
+
+.slick-carousel-container {
+  background-color: #3a0000;
+  width: 87%;
+  margin: 2rem auto;
+  height: 450px; /* Yükseklik ayarlama */
+  padding-top: 40px;
+  padding-bottom: 20px;
+  padding-left: 200px;
+  padding-right: 200px;
+  
+  
+
+}
+
+.slick-carousel .slick-slide {
+  padding: 10px; 
+  width: 30%;
+  
+}
+
+.slick-slide img {
+  width: 70%;
+  height: auto;
+  border-radius: 10px; 
+  border: '1px solid blue'
+}
