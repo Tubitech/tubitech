@@ -58,7 +58,7 @@
   bottom: 18rem;
 }
 
-/*! ------------ 3- ABOUT SECTION ----------- */
+
 
 #about {
   background-color: #3a0000;
@@ -67,7 +67,19 @@
   padding-bottom: 20px;
 } 
 
-/*! ------------- 4- INSTRUCTORS -------------*/
+
+div.col-md-6 p {
+  color: #fff !important; /* Yazı rengini beyaz yapar ve önemli olduğunu belirtir */
+  font-size: 1.3rem !important; /* Yazı boyutunu korur ve önemli olduğunu belirtir */
+  font-family: 'Calibri', sans-serif !important; /* Yazı tipini korur ve önemli olduğunu belirtir */
+}
+
+div.col-md-6 i {
+  color: hsl(49, 68%, 53%) !important; /* İkonların rengini korur ve önemli olduğunu belirtir */
+  font-size: 3rem !important; /* İkon boyutunu korur ve önemli olduğunu belirtir */
+}
+
+
 section#instructors .card {
   transition: transform 0.5s;
 }
@@ -137,7 +149,7 @@ section#instructors .socials i:hover {
 }
 
 .card p {
-  color: #555555;
+  color: black;
   font-size: 1rem;
 }
 
@@ -147,7 +159,7 @@ section#instructors .socials i:hover {
 
 .arrow {
   font-size: 2rem;
-  color: #333;
+  color: black;
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -168,7 +180,7 @@ section#instructors .socials i:hover {
 }
 
 .arrow:hover {
-  background-color: #333;
+  background-color: black;
   color: #ffffff;
 }
 
@@ -192,12 +204,33 @@ section#courses .nav-link {
 }
 
 /*! ----------- 6- CONTACT SECTION ------------ */
+
+
+
+#contact a {
+  
+  color: black; 
+}
+
+#contact a:hover {
+  text-decoration: underline; 
+  color: #555; 
+}
+
 footer{
-  background-color: #630101;
+  margin-bottom: 0;
+  width: 100%; 
+  background-color: #000; 
+  color: #fff; 
+  text-align: center; 
+  padding: 1rem; 
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5); 
+  z-index: 10;
 }
 
 /*! --------------- 7- FOOTER ----------------- */
 footer i {
+  
   font-size: 2rem;
   color: #e9e9e9;
   margin-right: 0.8rem;
@@ -239,7 +272,7 @@ footer i:hover {
   background-color: #3a0000;
   width: 87%;
   margin: 2rem auto;
-  height: 450px; /* Yükseklik ayarlama */
+  height: 450px; 
   padding-top: 40px;
   padding-bottom: 20px;
   padding-left: 200px;
