@@ -157,6 +157,41 @@ section#instructors .socials i:hover {
   transform: scale(1.05);
 }
 
+
+.project-container {
+  border: 1px solid #ababab; /* Gri renkli bir kenarlık */
+  border-radius: 12px; /* Köşe yuvarlama */
+  padding: 20px; /* İçerik boşluğu */
+  margin-bottom: 30px; /* Alt boşluk */
+  background-color: #f9f9f9; /* Açık gri arka plan */
+  transition: all 0.3s ease; /* Hover efekti */
+}
+
+.project-container:hover {
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.2), 8px 8px 16px rgba(0, 0, 0, 0.1); /* Dört taraflı gölge efekti */
+  background-color: #ffffff; /* Hover ile arka plan beyaz olur */
+}
+
+.project-img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.project-title {
+  font-weight: bold;
+  color: #333;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.project-description {
+  text-align: justify;
+  color: #555;
+  font-size: 1rem;
+}
+
 .arrow {
   font-size: 2rem;
   color: black;
@@ -294,4 +329,3 @@ footer i:hover {
   border-radius: 10px; 
   border: '1px solid blue'
 }
-
