@@ -227,8 +227,8 @@ section#students img {
 
 /*! ----------- 5- ANIMATION SECTION ----------- */
 section#students img {
-  max-width: 5px;
-  min-width: 700px;
+  max-width: 3px;
+  min-width: 600px;
 } 
 /*! ----------- 5- COURSES SECTION ----------- */
 section#courses .nav-link.active {
@@ -329,3 +329,4 @@ footer i:hover {
   border-radius: 10px; 
   border: '1px solid blue'
 }
+
