@@ -33,57 +33,58 @@
   <body id="body">
      <!-- NAVBAR -->
 
-    <!-- <nav class="navbar navbar-expand-lg bg-danger bg-gradient navbar-dark"> -->
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="./img/tubitech_logo.png" alt="logo" style=" width: 120px; height: auto;"/>
-          </a>
-          <h5 style="color: #d7c8c8; font-family: 'College', sans-serif; font-size: 30px; text-align: left; font-weight: 600;">TUBITECH</h5>
-  
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto me-3 mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="./index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./ourteam.html">our team</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./robot.html">our robot</a>
-              </li>
-              
-              <li class="nav-item">
-                <a class="nav-link" href="./ourwork.html">projects
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./sponsors.html">sponsors</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./buildblog.html">build blog</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./publications.html ">publications</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contacts">contact</a>
-              </li>
-            
-          </div>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="./img/tubitech_logo.png" alt="logo" style="width: 120px; height: auto;" />
+        </a>
+        <h5 style="color: #d7c8c8; font-family: 'College', sans-serif; font-size: 30px; text-align: left; font-weight: 600;">TUBITECH</h5>
+    
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto me-3 mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./ourteam.html">Our Team</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Our Robot
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="./robot.html">2024 Velox</a></li>
+                <li><a class="dropdown-item" href="./buildblog.html">2025 Ramot Build Blog</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./ourwork.html">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./sponsors.html">Sponsors</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./publications.html">Publications</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">Contact</a>
+            </li>
+          </ul>
         </div>
-      </nav>
+      </div>
+    </nav>
+    
 
     
       
@@ -91,7 +92,7 @@
 <section id="robot-features" class="container bg-light p-5">
   <h2 class="display-6 text-center text-danger mb-4" style="color: #630101 !important; font-family: 'College';">Robot Name: Velox</h2>
 
-  <div class="row align-items-center g-5">
+  <div class=" row align-items-center g-5">
     <div class="col-md-6 text-center">
       <img src="./img/ourrobot1.jpg" alt="Robot Side View" style="border-radius: 12px; width: 100%; max-width: 300px;"/>
     </div>
@@ -103,7 +104,7 @@
     </div>
   </div>
 
-  <div class="row align-items-center g-5 mt-5 flex-md-row-reverse">
+  <div class="project-container row align-items-center g-5 mt-5 flex-md-row-reverse">
     <div class="col-md-6 text-center">
       <img src="./img/ourrobot2.jpg" alt="Robot Top View" style="border-radius: 12px; width: 100%; max-width: 300px;"/>
       <img src="./img/ourrobot3.jpg" alt="Robot In Action" style="border-radius: 12px; width: 100%; max-width: 300px;"/>
@@ -118,7 +119,7 @@
     </div>
   </div>
 
-  <div class="row align-items-center g-5 mt-5">
+  <div class="project-container row align-items-center g-5 mt-5">
     <div class="col-md-6 text-center">
       <img src="./img/ourrobot4.jpg" alt="Robot In Action" style="border-radius: 12px; width: 100%; max-width: 300px;"/>
       <img src="./img/ourrobot5.jpg" alt="Robot In Action" style="border-radius: 12px; width: 100%; max-width: 300px;"/>
@@ -126,11 +127,12 @@
     <div class="col-md-6">
       <h5 style="font-weight: bold; color: #000 !important;">2) Intake System</h5>
       <p style="text-align: justify; color: #000 !important;">
-        Intake sistemi notanın sahadan robota alınabilmesi için kullanılmaktadır. Sistemde Intake millerinin döndürülmesi için 2 adet JE motor kullanılmaktadır. Millerin dönmesi sonucu millerin üzerinde bulunan squishy tekerler sayesinde nota sahadan alınıp önce arma oradan da shootera verilir. Intake sistemi için gereken squishy tekerler da takımımızın kendi üretimidir. Robotta intake sistemi notayı bumper’ın altından alacak şekilde tasarlanmıştır , bunun sebebi hem robotun boyutunu minimuma indirmek hem de dış darbelerden en az şekilde etkilenecek hale getirmektir. Intake sistemi iki çelik plakadan oluşmaktadır. Bu plakalar şaseye bağlıdır.
+        The intake system is used to transfer the note from the field to the robot. Two JE motors are used to rotate the intake rollers. As the rollers spin, the squishy wheels on them allow the note to be picked up from the field, passed through the arm, and then handed over to the shooter. The squishy wheels required for the intake system are also custom-made by our team. The intake system is designed to pick up the note from beneath the bumper, which serves two purposes: minimizing the robot's size and protecting it from external impacts. The intake system consists of two steel plates, which are attached to the chassis.
       </p>
     </div>
+  </div>
 
-    <div class="row align-items-center g-5 mt-5 flex-md-row-reverse">
+  <div class="project-container row align-items-center g-5 mt-5 flex-md-row-reverse">
       <div class="col-md-6 text-center">
         <img src="./img/ourrobot8.jpg" alt="Robot Top View" style="border-radius: 12px; width: 100%; max-width: 300px;"/>
         <img src="./img/ourrobot9.jpg" alt="Robot Top View" style="border-radius: 12px; width: 100%; max-width: 300px;"/>
@@ -141,9 +143,9 @@
           Mk4i swerve modules are used for the movement of the vehicle. This makes our robot more agile. A total of 8 neo motors are used for the drivetrain.
         </p>
       </div>
-    </div>
+  </div>
 
-    <div class="row align-items-center g-5 mt-5">
+    <div class="project-container row align-items-center g-5 mt-5">
       <div class="col-md-6 text-center">
         <img src="./img/ourrobot6.jpg" alt="Robot In Action" style="border-radius: 12px; width: 100%; max-width: 300px;"/>
         <img src="./img/ourrobot7.jpg" alt="Robot In Action" style="border-radius: 12px; width: 100%; max-width: 300px;"/>
@@ -154,7 +156,8 @@
           A bumper system is installed around the robot to make it more resistant to collisions and safer during matches. The bumper on Velox is manufactured in two pieces. One piece surrounds one edge of the robot, while the other surrounds three edges. For the bumper, cylindrical foams are covered with red and blue fabrics, and the team number is painted on the fabric.
         </p>
       </div>
-      <div class="row align-items-center g-5 mt-5 flex-md-row-reverse">
+    </div>
+      <div class="project-container row align-items-center g-5 mt-5 flex-md-row-reverse">
         <div class="col-md-6 text-center">
           <img src="./img/Robot1.jpg" alt="Robot Top View" style="border-radius: 12px; width: 200%; max-width: 300px;"/>
         </div>
@@ -165,18 +168,21 @@
           </p>
         </div>
       </div>
+      <div class="project-container row align-items-center g-5 mt-5 flex-md-row-reverse">
+        <div class="col-md-6 text-center">
+          <img src="./img/robot_in_action.jpg" alt="Robot Top View" style="border-radius: 12px; width: 200%; max-width: 300px;"/>
+        </div>
+        <div class="col-md-6">
+          <h5 style="font-weight: bold; color: #000 !important;"> 6) Climbing</h5>
+          <p style="text-align: justify; color: #000 !important;">
+            Our robot is climbed by 2 Cim motors. The motors are attached to aluminum plates and then to the chassis. A carbon fiber rod is attached to each motor, and a hook is attached to the end of the carbon fiber rod. The magnet-detachable hook detaches from the rod when subjected to a certain level of force, allowing it to climb.
+          </p>
+        </div>
+      </div>
 
-      <div class="col-md-6 text-center">
-        <img src="./img/robot_in_action.jpg" alt="Robot In Action" style="border-radius: 12px; width: 100%; max-width: 300px;"/>
-      </div>
-      <div class="col-md-6">
-        <h5 style="font-weight: bold; color: #000 !important;">6) Climbing</h5>
-        <p style="text-align: justify; color: #000 !important;">
-          Our robot is climbed by 2 Cim motors. The motors are attached to aluminum plates and then to the chassis. A carbon fiber rod is attached to each motor, and a hook is attached to the end of the carbon fiber rod. The magnet-detachable hook detaches from the rod when subjected to a certain level of force, allowing it to climb.
-        </p>
-      </div>
-    </div>
-  </div>
+      
+    
+  
 </section>
   
         
